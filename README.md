@@ -22,14 +22,17 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/BearTF.git
+git clone https://github.com/h4sun/BearTF.git
 cd BearTF
 ```
 
 ### 2. Install Dependencies
 
 ```bash
-npm install
+npm install steam-user
+npm install steam-tradeoffer-manager
+npm install steamcommunity
+npm install axios
 ```
 
 ---
@@ -49,7 +52,9 @@ module.exports = {
     token: "YOUR_BACKPACKTF_TOKEN",
     api: "YOUR_STEAM_API_KEY"
   },
-  steamapi: "YOUR_STEAM_API_KEY"
+  steamapi: "YOUR_STEAM_API_KEY",
+  identitySecret: "YOUR_IDENTITY_SECRET",
+  sharedSecret: "YOUR_SHARED_SECRET",
 };
 ```
 
@@ -59,13 +64,13 @@ module.exports = {
 
 ```json
 {
-  "Refined Metal": {
-    "buy": { "metal": 0.66 },
-    "sell": { "metal": 0.77 }
+  "Team Captain": {
+    "buy": { "key": 0, "metal": 15.00 },
+    "sell": { "key": 0, "metal": 15.33 }
   },
-  "Scrap Metal": {
-    "buy": { "metal": 0.11 },
-    "sell": { "metal": 0.22 }
+  "Mistaken Movember": {
+    "buy": { "key": 0, "metal": 5.00 },
+    "sell": { "key": 0, "metal": 5.33 }
   }
 }
 ```
@@ -83,14 +88,6 @@ node index.js
 ```
 
 The bot will log into Steam, fetch your inventory, and automatically create listings on backpack.tf based on your `pricelist.json`.
-
----
-
-## ❗ Notes
-
-- You must enable **Steam Guard** and provide your `sharedSecret` to automatically confirm trades.
-- You must have listings on backpack.tf to allow bumping.
-- Avoid sending too many requests in a short time — this may cause **rate limiting (HTTP 429)**.
 
 ---
 
