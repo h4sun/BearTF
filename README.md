@@ -94,12 +94,6 @@ The bot will log into Steam, fetch your inventory, and automatically create list
 
 ---
 
-## 📞 Support
-
-Have questions or suggestions? Feel free to open an issue or contribute!
-
----
-
 ## 🧠 License
 
 MIT License © 2025 BearTF Contributors
