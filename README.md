@@ -33,6 +33,7 @@ npm install steam-user
 npm install steam-tradeoffer-manager
 npm install steamcommunity
 npm install axios
+npm install dotenv
 ```
 
 ---
