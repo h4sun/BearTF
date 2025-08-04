@@ -1,0 +1,34 @@
+{
+    "Hunter Heavy": {
+        "buy": {
+            "key": 0,
+            "metal": 2.66
+        },
+        "sell": {
+            "key": 0,
+            "metal": 2.77
+        },
+        "buyQuantity": 1,
+        "listingBuyId": "440_76561198219047832_2d4b276cfe1755a4fd77b6fe80f46e62"
+    },
+    "Security Shades": {
+        "buy": {
+            "key": 0,
+            "metal": 3.77
+        },
+        "buyQuantity": 1
+    },
+    "Lord Cockswain's Novelty Mutton Chops and Pipe": {
+        "buy": {
+            "key": 0,
+            "metal": 2.77
+        },
+        "buyQuantity": 1
+    },
+    "Mistaken Movember": {
+        "sell": {
+            "key": 0,
+            "metal": 5.44
+        }
+    }
+}
